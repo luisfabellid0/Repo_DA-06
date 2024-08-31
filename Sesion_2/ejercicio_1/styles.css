@@ -1,0 +1,30 @@
+/* Selección de elementos */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+/* Selección de clases */
+.operator, .map {
+    border: 1px solid #ccc;
+    padding: 10px;
+    margin: 10px 0;
+    background-color: #fff;
+}
+
+/* Selección de ID */
+#overview, #operator-list, #map-list {
+    padding: 20px;
+    background-color: #eee;
+}
+
+/* Selección de pseudo-clases */
+a:hover {
+    color: #0056b3;
+}
+
+/* Selección de atributos */
+img[alt^="Operador"] {
+    border: 2px solid #000;
+}

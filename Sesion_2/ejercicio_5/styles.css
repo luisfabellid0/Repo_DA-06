@@ -1,0 +1,138 @@
+/* General Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #000;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: #fff;
+}
+
+header nav {
+    flex-grow: 1;
+    text-align: center;
+}
+
+nav ul {
+    list-style: none;
+    display: inline-flex;
+    gap: 30px;
+    padding: 0;
+    margin: 0;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #000;
+    font-size: 16px;
+}
+
+main {
+    display: flex;
+    padding: 50px;
+    background-color: #f5f5f5;
+}
+
+.product-display {
+    display: flex;
+    align-items: center;
+    gap: 50px;
+}
+
+.product-display img {
+    width: 960xpx;
+    height: 540px;
+}
+
+.product-info {
+    max-width: 400px;
+}
+
+.product-info h1 {
+    font-size: 36px;
+}
+
+.product-info p {
+    margin: 10px 0;
+}
+
+.product-info button {
+    padding: 10px 20px;
+    background-color: #000;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+}
+
+.reviews {
+    background-color: #f5f5f5;
+    padding: 20px 50px;
+    display: flex;
+    justify-content: space-between;
+    gap: 40px;
+}
+
+.reviews .review {
+    max-width: 200px;
+}
+
+/* Footer Styles */
+footer {
+    background-color: #000;
+    color: #fff;
+    padding: 40px 20px;
+    display: flex;
+    justify-content: center;
+}
+
+.footer-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+    max-width: 1200px;
+    width: 100%;
+    text-align: center;
+}
+
+.footer-grid .column,
+.footer-grid .mailing-list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.footer-grid ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.footer-grid ul li {
+    margin-bottom: 10px;
+}
+
+.footer-grid ul li a {
+    text-decoration: none;
+    color: #fff;
+}
+
+.mailing-list input {
+    padding: 10px;
+    border: none;
+    width: 80%;
+    margin-bottom: 10px;
+}
+
+.mailing-list button {
+    padding: 10px;
+    background-color: #fff;
+    color: #000;
+    border: none;
+    cursor: pointer;
+}
