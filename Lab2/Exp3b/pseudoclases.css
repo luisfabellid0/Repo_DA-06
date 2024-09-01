@@ -1,0 +1,39 @@
+a:hover {
+    color: red;
+}
+
+input:focus {
+    background-color: lightblue;
+}
+
+div:first-child {
+    font-weight: bold;
+}
+
+li:nth-child(odd) {
+    background-color: #f2f2f2;
+}
+
+li:nth-child(even) {
+    background-color: #e6e6e6;
+}
+
+a:visited {
+    color: purple;
+}
+
+input:required {
+    border: 2px solid red;
+}
+
+input[type="checkbox"]:checked {
+    background-color: yellow;
+}
+
+input:focus-visible {
+    outline: 3px solid blue;
+}
+
+div:last-child {
+    color: green;
+}
