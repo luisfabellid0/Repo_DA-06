@@ -1,0 +1,162 @@
+/*************************************************************************************************
+ARCHIVO		: CSS
+AUTOR		: Luis Espinoza
+FECHA		: 31/08/2024
+DESCRIPCIÓN	: UTILIZACIÓN DE SELECTORES COMBINADOS, MÚLTIPLES, REGEX HERENCIA Y CASCADA 
+*************************************************************************************************/
+body p {
+    color: #333;
+    font-size: 16px;
+}
+
+
+header h1 {
+    color: #007BFF;
+    text-align: center;
+}
+
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+
+footer p {
+    font-size: 14px;
+    color: #666;
+}
+
+
+
+
+article > p {
+    margin-bottom: 20px;
+}
+
+
+section .highlight {
+    background-color: yellow;
+}
+
+
+
+
+h2, h3, h4 {
+    font-family: Arial, sans-serif;
+    color: #333;
+}
+
+
+button, .btn {
+    padding: 10px 20px;
+    border: none;
+    background-color: #28a745;
+    color: #fff;
+    cursor: pointer;
+}
+
+
+input[type="text"], textarea {
+    border: 1px solid #ccc;
+    padding: 8px;
+    width: 100%;
+}
+
+
+/* --- UTILIZACIÓN DE SELECTORES REGEX --- */
+
+
+a[href*="example"] {
+    color: #FF5722;
+}
+input[name^="user"] {
+    border: 1px solid #4CAF50;
+}
+
+
+a[href$=".pdf"] {
+    color: #F44336;
+}
+
+
+div[class~="highlight"] {
+    background-color: #FFC107;
+}
+
+
+input[type="email"] {
+    border: 2px solid #3F51B5;
+}
+
+
+/* --- UTILIZACIÓN DE SELECTORES POR HERENCIA Y CASCADA --- */
+
+
+/* Selectores por Herencia */
+body {
+    font-family: 'Helvetica', sans-serif;
+    color: #333;
+}
+
+
+section {
+    margin: 20px;
+}
+
+
+section p {
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+
+
+
+article {
+    background-color: #f4f4f4;
+    padding: 15px;
+}
+
+
+article h2 {
+    color: #333;
+}
+
+
+article p {
+    color: #666;
+}
+
+
+
+
+header {
+    background-color: #007BFF;
+    color: #fff;
+    padding: 10px;
+}
+
+
+header h1 {
+    font-size: 2em;
+}
+
+
+header h1 {
+    color: #fff; 
+}
+
+
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 10px;
+}
+
+
+footer p {
+    font-size: 12px;
+}
+
+
