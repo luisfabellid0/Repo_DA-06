@@ -1,0 +1,36 @@
+/* 1. Selecciona todos los elementos cuyo atributo 'id' comienza con "section-" */
+[id^="section-"] {
+    background-color: #f0f8ff;
+    padding: 15px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+}
+
+/* 2. Selecciona todos los elementos cuyo atributo 'class' termina en "-active" */
+[class$="-active"] {
+    color: #ff0000;
+    font-weight: bold;
+}
+
+/* 3. Selecciona todos los elementos cuyo atributo 'href' contiene "koenigsegg" */
+[href*="koenigsegg"] {
+    text-decoration: none;
+    font-style: italic;
+}
+
+/* 4. Selecciona todos los elementos de enlace (a) cuyo atributo 'href' comience con "https" */
+a[href^="https"] {
+    color: #0066cc;
+}
+
+/* 5. Selecciona todos los elementos cuyo atributo 'data-model' contenga la palabra "Jesko" en cualquier parte */
+[data-model*="Jesko"] {
+    border-left: 5px solid #006400;
+    padding-left: 10px;
+}
+
+/* 6. Selecciona todos los elementos cuyo atributo 'class' contenga "highlight" como una palabra completa */
+[class~="highlight"] {
+    background-color: yellow;
+    font-size: 1.2em;
+}

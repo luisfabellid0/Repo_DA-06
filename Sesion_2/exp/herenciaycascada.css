@@ -1,0 +1,105 @@
+/* 1. Estilo base para todo el documento */
+body {
+    font-family: Arial, sans-serif;
+    color: #333;
+}
+
+/* 2. Herencia de color y fuente para todos los párrafos dentro de los elementos article */
+article {
+    color: #555;
+    font-size: 1rem;
+}
+
+/* 3. Herencia de color y tamaño de fuente para los títulos dentro de un elemento section */
+section {
+    color: #006400;
+}
+
+section h1, section h2, section h3 {
+    font-size: 2rem;
+}
+
+/* 4. Herencia de estilo de letra para todos los elementos dentro de un div con la clase 'highlight' */
+.highlight {
+    font-weight: bold;
+    color: #ff4500;
+}
+
+/* 5. Herencia de color y espaciado para listas dentro de un elemento nav */
+nav {
+    color: #fff;
+    background-color: #333;
+    padding: 10px;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+nav ul li {
+    padding: 5px 0;
+}
+
+/* 6. Herencia de color para todos los elementos dentro de un elemento aside */
+aside {
+    color: #666;
+    font-style: italic;
+}
+
+/* 7. Herencia de alineación de texto y margen para elementos dentro de un footer */
+footer {
+    text-align: center;
+    margin-top: 20px;
+}
+
+footer p {
+    margin: 0;
+}
+
+/* --- CASCADA --- */
+
+/* 1. Regla genérica para todos los párrafos */
+p {
+    font-size: 1rem;
+    line-height: 1.5;
+    margin-bottom: 10px;
+}
+
+/* 2. Regla más específica para párrafos dentro de elementos con la clase 'intro' */
+.intro p {
+    font-size: 1.2rem;
+    color: #333;
+}
+
+/* 3. Regla específica para el primer párrafo de cualquier artículo */
+article p:first-of-type {
+    font-weight: bold;
+    color: #000;
+}
+
+/* 4. Estilo base para enlaces */
+a {
+    color: #1e90ff;
+    text-decoration: none;
+}
+
+/* 5. Estilo más específico para enlaces dentro de un nav */
+nav a {
+    color: #fff;
+    padding: 5px 10px;
+}
+
+/* 6. Estilo base para botones */
+button {
+    padding: 10px 15px;
+    background-color: #008cba;
+    border: none;
+    color: white;
+}
+
+/* 7. Estilo más específico para botones dentro de un formulario */
+form button {
+    background-color: #e67e22;
+    border-radius: 5px;
+}

@@ -1,0 +1,99 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 20px;
+}
+
+/* Grid container for playlists */
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.item {
+    background-color: white;
+    padding: 10px;
+    border: 1px solid #ddd;
+    text-align: center;
+}
+
+.item img {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 10px;
+}
+
+.item p {
+    font-size: 16px;
+    color: #333;
+}
+
+/* Styling for Extras section */
+.extras-container {
+    display: flex;
+    gap: 20px;
+}
+
+.container {
+    width: 320px;
+    background-color: #2b2b6d;
+    border-radius: 10px;
+    padding: 10px;
+}
+
+.container .item {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    border-radius: 5px;
+    background-color: #3c3c8c;
+    margin-bottom: 8px;
+    transition: background-color 0.3s;
+    cursor: pointer;
+}
+
+.container .item:hover {
+    background-color: #4c4cb0;
+}
+
+.icon {
+    width: 40px;
+    height: 40px;
+    background-color: #fff;
+    border-radius: 5px;
+    margin-right: 10px;
+}
+
+.heart {
+    background-image: url('https://upload.wikimedia.org/wikipedia/commons/thumb/4/42/Coraz%C3%B3n_%28♥%29.svg/2048px-Coraz%C3%B3n_%28♥%29.svg.png');
+    background-size: cover;
+}
+
+.rock {
+    background-image: url('https://upload.wikimedia.org/wikipedia/commons/thumb/5/5b/The_rocker_fist.jpg/320px-The_rocker_fist.jpg');
+    background-size: cover;
+}
+
+.radio {
+    background-image: url('https://upload.wikimedia.org/wikipedia/commons/thumb/1/11/Vintage_Music_Art.png/320px-Vintage_Music_Art.png');
+    background-size: cover;
+}
+
+.text {
+    font-size: 16px;
+    font-weight: bold;
+    color: white;
+}
+
+/* Description box styling */
+.description {
+    width: 100%;
+    padding: 10px;
+    border: 2px solid red;
+    background-color: #f4f4f4;
+    color: #333;
+    font-size: 16px;
+    border-radius: 5px;
+}
