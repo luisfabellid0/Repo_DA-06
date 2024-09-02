@@ -1,0 +1,19 @@
+div{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif; display: grid ; 
+    justify-content: center;
+    display: grid; 
+    justify-content: center;
+}
+h1{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; 
+    color: #BA722F; 
+    margin: auto;
+}
+h2{
+    color: #3D5055; 
+    text-align: center;
+}
+p{
+    color: #378FA5; 
+    text-align: center;
+}
