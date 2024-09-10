@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Generador de Contraseña Segura</title>
+    <link rel="stylesheet" href="styles.css">
+
+</head>
+<body>
+    <div class="container">
+        <h1>Generador de Contraseña Segura</h1>
+        <form id="passwordForm">
+            <label for="length">Longitud de la contraseña:</label>
+            <input type="number" id="length" name="length" min="8" max="32" value="12">
+            
+            <label for="includeUppercase">
+                <input type="checkbox" id="includeUppercase" name="includeUppercase" checked>
+                Incluir letras mayúsculas
+            </label>
+            
+            <label for="includeLowercase">
+                <input type="checkbox" id="includeLowercase" name="includeLowercase" checked>
+                Incluir letras minúsculas
+            </label>
+            
+            <label for="includeNumbers">
+                <input type="checkbox" id="includeNumbers" name="includeNumbers" checked>
+                Incluir números
+            </label>
+            
+            <label for="includeSymbols">
+                <input type="checkbox" id="includeSymbols" name="includeSymbols" checked>
+                Incluir símbolos
+            </label>
+            
+            <button type="button" id="generateBtn">Generar Contraseña</button>
+        </form>
+        
+        <div id="result">
+            <h2>Contraseña Generada:</h2>
+            <p id="passwordOutput"></p>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
