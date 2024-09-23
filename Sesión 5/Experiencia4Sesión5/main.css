@@ -1,0 +1,60 @@
+
+header{
+  background-color: #009A44;
+
+  navbar{
+    background-color: #009A44;
+  }
+  
+  .a{
+    background-color: #009A44;
+  }
+}
+
+body {
+  font-family: "Arial", sans-serif;
+  color: #343a40;
+}
+
+#cta {
+  background-color: #b9c8d8;
+}
+
+#cta h1 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+#cta p {
+  font-size: 1.25rem;
+}
+
+#features h2 {
+  margin-bottom: 2rem;
+}
+
+.carousel-control-prev-icon, .carousel-control-next-icon {
+  filter: invert(108%);
+}
+
+#features .card {
+  border: none;
+  text-align: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+#features .card:hover {
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+#testimonials h2 {
+  margin-bottom: 2rem;
+}
+
+footer {
+  background-color: #009A44;
+}
+
+footer p {
+  margin: 0;
+}

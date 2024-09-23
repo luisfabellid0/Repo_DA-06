@@ -1,0 +1,24 @@
+body {
+    font-family: Arial, sans-serif;
+}
+h2 {
+    color: #e28017;
+}
+.card {
+    margin-bottom: 20px;
+    text-align: center;
+}
+.btn-primary {
+    background-color: #e28017;
+    border: none;
+}
+.btn-primary:hover {
+    background-color: #a86115;
+}
+.btn-danger {
+    background-color: red;
+    border: none;
+}
+.btn-danger:hover {
+    background-color: #c00;
+}

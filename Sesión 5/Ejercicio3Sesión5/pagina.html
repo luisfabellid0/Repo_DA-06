@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tienda en Línea</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <a class="navbar-brand" href="#"><img src="TEMU.png" alt="Logo" width="50"> TEMU</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+        <a class="btn btn-outline-success ml-auto" href="carrito.html">Carrito</a>
+    </div>
+  </nav>
+
+    <div id="productCarousel" class="carousel slide mt-3" data-ride="carousel">
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="personapolo.webp" class="d-block w-100" alt="Polos">
+            </div>
+            <div class="carousel-item">
+                <img src="personapantalon.webp" class="d-50 w-100" alt="Pantalones">
+            </div>
+            <div class="carousel-item">
+                <img src="personagorro.jpg" class="d-50 w-100" alt="Gorros">
+            </div>
+        </div>
+        <a class="carousel-control-prev" href="#productCarousel" role="button" data-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="sr-only">Anterior</span>
+        </a>
+        <a class="carousel-control-next" href="#productCarousel" role="button" data-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="sr-only">Siguiente</span>
+        </a>
+    </div>
+
+    <div class="container mt-5">
+        <h2>Categorías de Productos</h2>
+        <div class="row">
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="polo.png" class="card-img-top" alt="Polo">
+                    <div class="card-body">
+                        <h5 class="card-title">Polos</h5>
+                        <p class="card-text">Camisetas ligera y cómodas, perfectas para el calor.</p>
+                        <a href="producto1.html" class="btn btn-primary">Ver Producto</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="pantalon.webp" class="card-img-top" alt="Categoría 2">
+                    <div class="card-body">
+                        <h5 class="card-title">Pantalones</h5>
+                        <p class="card-text">Prendas versátiles que cubren las piernas, adecuadas para cualquier ocasión.</p>
+                        <a href="producto2.html" class="btn btn-primary">Ver Producto</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="gorro.webp" class="card-img-top" alt="Categoría 3">
+                    <div class="card-body">
+                        <h5 class="card-title">Gorros</h5>
+                        <p class="card-text">Accesorios para la cabeza que protegen del frío o del sol, en varios estilos.</p>
+                        <a href="producto3.html" class="btn btn-primary">Ver Producto</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="text-center mt-5">
+        <h2>¡Compra Ahora y Aprovecha Nuestras Ofertas!</h2>
+        <a href="#" class="btn btn-danger btn-lg">Ver Ofertas</a>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>

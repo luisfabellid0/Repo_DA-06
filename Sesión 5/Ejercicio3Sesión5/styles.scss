@@ -1,0 +1,32 @@
+$primary-color: #e28017;
+
+body {
+    font-family: Arial, sans-serif;
+}
+
+h2 {
+    color: $primary-color;
+}
+
+.card {
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.btn-primary {
+    background-color: $primary-color;
+    border: none;
+
+    &:hover {
+        background-color: darken($primary-color, 10%);
+    }
+}
+
+.btn-danger {
+    background-color: red;
+    border: none;
+
+    &:hover {
+        background-color: darken(red, 10%);
+    }
+}
