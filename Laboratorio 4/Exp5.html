@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Experiencia 5: Uso de Arrays</title>
+</head>
+<body>
+
+    <h1>Uso de Arrays</h1>
+
+    <script>
+        let numeros = [1, 2, 3, 4];
+        let frutas = new Array('Manzana', 'Banana', 'Pera');
+        let personas = Array.of({ nombre: 'Ana' }, { nombre: 'Luis' });
+
+        numeros.push(5);
+        frutas.push('Uva');
+        personas.push({ nombre: 'Pedro' });
+
+        console.log('Números:', numeros);
+        console.log('Frutas:', frutas);
+        console.log('Personas:', personas);
+
+        numeros.pop();
+        frutas.splice(1, 1); 
+        personas.shift();
+
+        console.log('Números modificados:', numeros);
+        console.log('Frutas modificadas:', frutas);
+        console.log('Personas modificadas:', personas);
+
+        numeros.forEach(num => console.log(`Número: ${num}`));
+        let frutasEnMayuscula = frutas.map(fruta => fruta.toUpperCase());
+        let personasFiltradas = personas.filter(persona => persona.nombre === 'Pedro');
+
+        console.log('Frutas en mayúscula:', frutasEnMayuscula);
+        console.log('Personas filtradas:', personasFiltradas);
+    </script>
+</body>
+</html>
