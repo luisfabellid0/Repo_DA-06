@@ -1,0 +1,23 @@
+.navbar {
+    background-color: #3498db;
+}
+.navbar .nav-link {
+    color: #3498db;
+    transition: color 0.3s ease;
+}
+.navbar .nav-link:hover {
+    color: #217dbb;
+}
+.navbar .navbar-brand {
+    font-weight: bold;
+    font-size: 1.5rem;
+}
+.navbar .navbar-collapse {
+    transition: max-height 0.5s ease;
+}
+.navbar .navbar-collapse.collapsing {
+    max-height: 0;
+}
+.navbar .navbar-collapse.collapse.show {
+    max-height: 500px;
+}
