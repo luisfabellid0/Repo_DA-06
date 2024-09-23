@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Experiencia 4: Uso de Objetos</title>
+</head>
+<body>
+
+    <h1>Uso de Objetos</h1>
+
+    <script>
+        let auto = {
+            marca: 'Toyota',
+            modelo: 'Corolla',
+            año: 2021,
+            mostrarInfo: function() {
+                console.log(`Auto: ${this.marca} ${this.modelo}, Año: ${this.año}`);
+            }
+        };
+        auto.mostrarInfo();
+
+        function Auto(marca, modelo, año) {
+            this.marca = marca;
+            this.modelo = modelo;
+            this.año = año;
+            this.mostrarInfo = function() {
+                console.log(`Auto: ${this.marca} ${this.modelo}, Año: ${this.año}`);
+            };
+        }
+        const auto1 = new Auto('Honda', 'Civic', 2020);
+        auto1.mostrarInfo();
+
+        const autoPrototipo = {
+            mostrarInfo: function() {
+                console.log(`Auto: ${this.marca} ${this.modelo}, Año: ${this.año}`);
+            }
+        };
+
+        const auto2 = Object.create(autoPrototipo);
+        auto2.marca = 'Ford';
+        auto2.modelo = 'Focus';
+        auto2.año = 2019;
+        auto2.mostrarInfo();
+
+        auto.color = 'Rojo';
+        console.log(`Color: ${auto.color}`);
+
+        Auto.prototype.peso = '1500kg';
+        console.log(`Peso del auto1: ${auto1.peso}`);
+
+        auto2.velocidad = '200km/h';
+        console.log(`Velocidad: ${auto2.velocidad}`);
+    </script>
+</body>
+</html>
