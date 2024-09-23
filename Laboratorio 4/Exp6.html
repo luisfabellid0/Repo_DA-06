@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Experiencia 6: Uso de Objetos Globales</title>
+</head>
+<body>
+
+    <h1>Uso de Objetos Globales</h1>
+
+    <button onclick="mostrarPropiedadesWindow()">Mostrar Propiedades de Window</button>
+    <button onclick="mostrarPropiedadesArray()">Mostrar Propiedades de Array</button>
+    <button onclick="mostrarPropiedadesNumber()">Mostrar Propiedades de Number</button>
+
+    <script>
+
+        function mostrarPropiedadesWindow() {
+            console.log(`Altura de la ventana: ${window.innerHeight}`);
+            console.log(`Ancho de la ventana: ${window.innerWidth}`);
+            alert(`Altura: ${window.innerHeight}, Ancho: ${window.innerWidth}`);
+        }
+
+        function mostrarPropiedadesArray() {
+            let arr = [10, 20, 30];
+            console.log(`Longitud del array: ${arr.length}`);
+            console.log(`Array incluye 20: ${arr.includes(20)}`);
+            console.log(`Array invertido: ${arr.reverse()}`);
+        }
+
+        function mostrarPropiedadesNumber() {
+            let num = 42.567;
+            console.log(`Número original: ${num}`);
+            console.log(`Número redondeado: ${Math.round(num)}`);
+            console.log(`Número con 2 decimales: ${num.toFixed(2)}`);
+        }
+    </script>
+</body>
+</html>
