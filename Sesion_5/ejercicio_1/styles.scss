@@ -1,0 +1,90 @@
+// Colores
+$primary-color: #3498db;
+$secondary-color: #2ecc71;
+$text-color: #333;
+$background-color: #f5f5f5;
+
+// Fuentes
+$font-family: 'Arial', sans-serif;
+$font-size-base: 16px;
+$font-size-large: 24px;
+$font-size-small: 12px;
+
+// Espaciado
+$spacing-small: 8px;
+$spacing-medium: 16px;
+$spacing-large: 32px;
+
+// Bordes redondeados
+@mixin rounded($radius: 4px) {
+    border-radius: $radius;
+}
+
+// Sombra
+@mixin box-shadow($x: 0px, $y: 2px, $blur: 4px, $color: rgba(0, 0, 0, 0.1)) {
+    box-shadow: $x $y $blur $color;
+}
+
+// Transición
+@mixin transition($property: all, $duration: 0.3s, $ease: ease-in-out) {
+    transition: $property $duration $ease;
+}
+
+// Aclarar colores
+@function lighten-color($color, $percentage) {
+    @return lighten($color, $percentage);
+}
+
+// Oscurecer colores
+@function darken-color($color, $percentage) {
+    @return darken($color, $percentage);
+}
+
+body {
+    font-family: $font-family;
+    font-size: $font-size-base;
+    color: $text-color;
+    background-color: $background-color;
+    margin: 0;
+    padding: 0;
+
+    h1 {
+        font-size: $font-size-large;
+        color: $primary-color;
+    }
+
+    p {
+        font-size: $font-size-small;
+        color: darken-color($text-color, 10%);
+    }
+
+    .button {
+        background-color: $primary-color;
+        color: #fff;
+        padding: $spacing-small $spacing-medium;
+        @include rounded(8px);
+        @include box-shadow();
+        @include transition();
+
+        &:hover {
+            background-color: lighten-color($primary-color, 10%);
+        }
+    }
+
+    .card {
+        background-color: #fff;
+        padding: $spacing-medium;
+        @include rounded();
+        @include box-shadow(0px, 4px, 8px, rgba(0, 0, 0, 0.2));
+
+        h2 {
+            font-size: $font-size-large;
+            color: $secondary-color;
+        }
+
+        p {
+            margin-top: $spacing-small;
+            color: lighten-color($text-color, 20%);
+        }
+    }
+}

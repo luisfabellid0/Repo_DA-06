@@ -1,0 +1,33 @@
+@font-face {
+    font-family: 'Blessed Day';
+    src: url('./fonts/BLESD.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+.custom-bg {
+    background-color: #003399;
+    color: white;
+}
+
+.custom-footer {
+    background-color: #222;
+    color: white;
+    padding: 10px 0;
+}
+
+.custom-card {
+    background-color: #f8f9fa;
+    border: 1px solid #ddd;
+}
+
+.title-font {
+    font-family: 'Blessed Day', cursive;
+}
+
+.ford-logo {
+    width: 60px;
+    height: auto;
+    margin-right: 10px;
+    object-fit: contain;
+}
