@@ -19,14 +19,12 @@ const ItemListFunctional = () => {
   };
 
   useEffect(() => {
-    // Este efecto se ejecutará cada vez que `items` cambie
     console.log('La lista de ítems ha cambiado:', items);
 
-    // Opcional: lógica de limpieza si es necesario
     return () => {
       console.log('Limpiando efecto anterior');
     };
-  }, [items]); // Dependencia de `items`
+  }, [items]);
 
   return (
     <div>
