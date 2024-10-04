@@ -1,0 +1,84 @@
+.animal-card {
+  border: 1px solid #ccc;
+  padding: 16px;
+  margin: 64px 16px;
+  border-radius: 8px;
+  text-align: center;
+  background-color: #FFFCF7;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s, box-shadow 0.2s;
+  height: 400px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.animal-card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.animal-card h2 {
+  margin-bottom: 8px;
+  color: #728291;
+}
+
+.animal-card p {
+  color: #728291;
+}
+
+.animal-card button {
+  padding: 8px 16px;
+  background-color: #A1B5D8;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+.animal-card button:hover {
+  background-color: #728291;
+}
+
+.animal-image {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 8px;
+  margin-bottom: 12px;
+}
+
+.modal-content {
+  background-color: white;
+  padding: 20px;
+  border-radius: 8px;
+  text-align: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  max-width: 400px;
+  width: 100%;
+  z-index: 10000; /* El contenido tiene una prioridad mayor */
+}
+
+.modal-content h3 {
+  margin-bottom: 10px;
+  color: #333;
+}
+
+.modal-content p {
+  margin-bottom: 20px;
+  color: #555;
+}
+
+.modal-content button {
+  padding: 8px 16px;
+  background-color: #4caf50;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.modal-content button:hover {
+  background-color: #45a049;
+}
