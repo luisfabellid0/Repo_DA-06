@@ -1,0 +1,52 @@
+body {
+  font-family: 'Arial', sans-serif;
+  margin: 0;
+  background-color: #f8f3f9;
+  color: #333;
+}
+
+.app-container {
+  text-align: center;
+}
+
+.header {
+  background-color: #f2c0d9;
+  color: #fff;
+  padding: 20px;
+}
+
+h1 {
+  font-size: 3rem;
+  margin: 0;
+}
+
+.main-content {
+  padding: 20px;
+}
+
+.about {
+  margin-bottom: 40px;
+}
+
+.gallery-grid {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+
+.gallery-grid img {
+  border-radius: 8px;
+  width: 300px;
+  height: 300px;
+  object-fit: cover;
+  border: 3px solid #d8b4e2;
+}
+
+.footer {
+  background-color: #d8b4e2;
+  color: white;
+  padding: 10px;
+  position: fixed;
+  width: 100%;
+  bottom: 0;
+}

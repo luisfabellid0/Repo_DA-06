@@ -1,0 +1,70 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Dancing Script', cursive;
+  background-color: #e6f7ff;
+  color: #333;
+}
+
+.App {
+  text-align: center;
+  padding: 20px;
+}
+
+.App-header {
+  margin-bottom: 20px;
+}
+
+.App-header h1 {
+  color: #4a90e2; /* Azul oscuro */
+  font-size: 3em;
+  margin-bottom: 10px;
+}
+
+.App-header p {
+  font-size: 1.5em;
+  margin-bottom: 30px;
+}
+
+.videos-section h2 {
+  color: #007acc;
+  margin: 20px 0 10px;
+}
+
+iframe {
+  margin-bottom: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.images-section {
+  margin-top: 40px;
+}
+
+.images-section h2 {
+  color: #004e89;
+  margin-bottom: 20px;
+}
+
+.image {
+  width: 250px;
+  margin: 10px;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+a {
+  text-decoration: none;
+  color: #007acc;
+  font-weight: bold;
+}
+
+a:hover {
+  color: #0099ff;
+}
