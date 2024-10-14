@@ -1,0 +1,38 @@
+/* Lista de productos */
+.products-list {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    list-style: none;
+    padding: 0;
+  }
+  
+  .products-list li {
+    background-color: #2c2c2c;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 10px 20px rgba(0, 209, 178, 0.5);
+    margin-bottom: 40px;
+    max-width: 300px;
+    text-align: center;
+  }
+  
+  .products-list li:hover {
+    transform: scale(1.05);
+    box-shadow: 0 10px 40px rgba(255, 64, 129, 0.7);
+  }
+  
+  .products-list a {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #00d1b2;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .products-list a:hover {
+    background-color: #ff4081;
+  }
+  

@@ -1,0 +1,16 @@
+/* Estilos para la página de inicio */
+.container {
+    text-align: center;
+    padding: 40px;
+  }
+  
+  h1 {
+    font-size: 3em;
+    color: #ff4081;
+  }
+  
+  p {
+    font-size: 1.5em;
+    color: #00d1b2;
+  }
+  
