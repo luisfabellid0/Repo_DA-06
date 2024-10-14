@@ -1,0 +1,16 @@
+/* Estilos para la página de contacto */
+.container {
+    text-align: center;
+    padding: 40px;
+  }
+  
+  h1 {
+    font-size: 2.5em;
+    color: #ff4081;
+  }
+  
+  p {
+    font-size: 1.2em;
+    color: #00d1b2;
+  }
+  
