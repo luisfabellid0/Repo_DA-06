@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inscripción de Usuarios</title>
+</head>
+<body>
+    <h1>Formulario de Inscripción</h1>
+    <form action="confirmacion.php" method="POST">
+        <label>Nombre completo:</label>
+        <input type="text" name="nombre" required><br>
+        
+        <label>Dirección:</label>
+        <input type="text" name="direccion" required><br>
+        
+        <label>Correo electrónico:</label>
+        <input type="email" name="correo" required><br>
+        
+        <label>Contraseña:</label>
+        <input type="password" name="contrasena" required><br>
+        
+        <label>Confirmar Contraseña:</label>
+        <input type="password" name="contrasena_confirm" required><br>
+        
+        <label>Fecha de nacimiento:</label>
+        <input type="date" name="fecha_nacimiento" required><br>
+        
+        <label>Sexo:</label>
+        <select name="sexo">
+            <option value="Masculino">Masculino</option>
+            <option value="Femenino">Femenino</option>
+        </select><br>
+        
+        <label>Ciudad a viajar:</label>
+        <select name="ciudad">
+            <option value="Nueva York">Nueva York - 500</option>
+            <option value="Madrid">Madrid - 400</option>
+            <option value="Buenos Aires">Buenos Aires - 300</option>
+        </select><br>
+        
+        <button type="submit">Enviar</button>
+    </form>
+</body>
+</html>
