@@ -1,0 +1,111 @@
+@import url('https://fonts.googleapis.com/css2?family=Playwrite+DE+Grund:wght@100..400&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Playwrite DE Grund', sans-serif;
+  background-image: url('./backgroundpag.jpg'); 
+  background-size: cover; 
+  background-position: center; 
+  background-repeat: no-repeat; /* No repetir la imagen */
+  height: 100vh; 
+  color: #333;
+}
+
+.App {
+  text-align: center;
+  padding: 20px;
+}
+
+.App-header {
+  margin-top: 100px; /* Espaciado superior */
+  background-color: rgba(255, 255, 255, 0.8); /* Fondo blanco semi-transparente */
+  padding: 40px; /* Espaciado interno */
+  border-radius: 15px; /* Bordes redondeados */
+  display: inline-block; /* El contenedor se ajusta al contenido */
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2); /* Sombra para resaltar */
+}
+
+.App-header h1 {
+  color: #ff7f50; /* Color anaranjado pastel */
+  font-size: 3em; /* Tamaño de fuente grande */
+  margin-bottom: 10px;
+}
+
+.App-header p {
+  font-size: 1.5em; /* Texto más pequeño */
+  color: #ff9933; /* Color anaranjado más oscuro */
+  margin-bottom: 20px;
+}
+
+button {
+  padding: 10px 20px;
+  font-size: 1.2em;
+  background-color: #ffae42; /* Color anaranjado pastel */
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #ff9933; /* Color más oscuro cuando se pasa el cursor */
+}
+
+input {
+  width: 80%;
+  padding: 10px;
+  margin: 10px 0;
+  border-radius: 5px;
+  border: 1px solid #ddd;
+}
+
+form {
+  background-color: rgba(255, 255, 255, 0.9); /* Fondo blanco para el formulario */
+  padding: 40px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  display: inline-block;
+  margin-top: 20px;
+}
+
+.playlist-container {
+  margin-top: 40px;
+}
+
+.playlist-container h2 {
+  color: #ff7f50; /* Color anaranjado pastel */
+  margin-bottom: 20px;
+}
+
+.playlist-container iframe {
+  margin-bottom: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+li {
+  margin: 10px 0;
+}
+
+a {
+  text-decoration: none;
+  color: #ff7f50;
+  font-weight: bold;
+  font-size: 1.2em;
+}
+
+a:hover {
+  color: #ff9933;
+}

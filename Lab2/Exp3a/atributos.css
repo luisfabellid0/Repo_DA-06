@@ -1,0 +1,16 @@
+[href] {
+    color: blue;
+    text-decoration: none;
+}
+
+[href^="http"] {
+    color: green;
+}
+
+[href$=".org"] {
+    color: orange;
+}
+
+[href*="example"] {
+    color: red;
+}
